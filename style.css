@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ 
+
+/*bachgraund image section*/
+.header
+{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(images/banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative ;
+}
+
+ 
+
+/*NEVEGATION PART*/
+
+ 
+
+nav
+{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ 
+
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+    background-color: white;
+}
+
+ 
+
+.nav-links ul li
+{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+nav ul li a:hover{
+    color: cornflowerblue;
+    border-radius: 1px;
+    box-shadow: 0 0 2px #33ffff,0 0 2px #33ffff;
+    background: cornsilk;
+
+}
+nav ul ul{
+    position:absolute;
+    top: 90;
+    opacity: 0;
+    visibility: hidden;
+    transition: .30s;
+}
+
+nav ul li:hover > ul{
+    top: 69px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ 
+
+.text_box
+{
+    width: 90%;
+    /*color: white;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*heading page start*/
+.text_box h1
+{
+    font-weight: 1000;
+    color: white;
+    font-size: 70px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+ 
+
+.text_box h4
+{
+    margin-top: 60px;
+    color: white;
+    letter-spacing:1px ;
+   
+}
+
+ 
+
+.text_box p{
+    color: white;
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn1{
+    color: white;
+    border: 1px solid;
+    background:rgb(243, 178, 94);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:"montserrat";
+
+}
+
+.all_items {
+    display: flex;
+  }
+  .available_items {
+    position: relative;
+    background: #f5f5f5;
+    padding: 5rem 0;
+  }
+  .available_items .header1 {
+    text-align: center;
+  }
+  .title {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  .item {
+    width: 25%;
+    padding-left: 6rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  .item:last-child {
+    margin-right: 6rem;
+  }
+  .item img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .item h5 {
+    padding-top: 2%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+  }
+  .item p,
+  .header1 p {
+    padding-top: 7px;
+    color: rgb(85, 84, 84);
+    font-size: 0.9rem;
+  }
+  .btn {
+    display: block;
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn_menu {
+    margin: 5rem auto;
+    background-color: rgb(109, 49, 49);
+  }
+  
+  .brand{
+    padding: 7rem 10rem;
+    display: flex;
+  }
+  .brand_first_part {
+    width: 50%;
+  }
+  .brand_second_part {
+    width: 50%;
+  }
+  
+  .brand_feature {
+    color: rgb(85, 84, 84);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .brand_first_part p {
+    font-size: 0.9rem;
+  }
+  .brand_title {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+  }
+  .sub_title {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  .brand_process {
+    margin-top: 1rem;
+    color: rgb(85, 84, 84);
+  }
+  
+  .btn_brand {
+    margin-top: 2rem;
+    background-color: #000;
+  }
+
+.brand-img img{
+    max-width: 80%;
+    margin-left: 65px;
+}
+  .pricing {
+    padding: 3rem 0;
+  }
+  .pricing_header {
+    text-align: center;
+  }
+  .pricing_title {
+    text-transform: uppercase;
+  }
+  .table {
+    display: flex;
+  }
+  .card {
+    text-align: center;
+    width: 30%;
+    border: 1px solid rgb(172, 169, 169);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card_black {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .card_gray {
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .btn_table {
+    margin: 0 auto;
+    background-color: rgb(1, 99, 74);
+  }
+  .card h5,
+  ul li {
+    border-bottom: 1px solid rgb(172, 169, 169);
+  }
+  ul li {
+    padding: 0.75rem 0;
+    list-style: none;
+  }
+  .highlights {
+    font-weight: 600;
+  }
+  .package_price {
+    font-size: 1.5rem;
+  }
+  .button_box {
+    background-color: #e2e1e1;
+  }
+  .blogs {
+    padding: 5rem;
+  }
+  .blogs_header {
+    text-align: center;
+  }
+  .blogs_features {
+    padding-top: 0rem;
+    font-size: 0.9rem;
+    color: rgb(85, 84, 84);
+  }
+  .blogs_cards {
+    display: flex;
+  }
+  .blogs_card {
+    padding: 0.5rem;
+    width: 33%;
+    border: 5px solid gray;
+    margin: 1rem;
+  }
+  .blogs_card img {
+    width: 420px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .blogs_title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+  }
+  .blogs_article {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+  }
+  
+  .footer {
+    padding: 5rem 5rem;
+    background: #000;
+    display: flex;
+  }
+  .about,
+  .newsletter {
+    width: 40%;
+  }
+  .follow {
+    width: 20%;
+  }
+  .footer_title {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .footer_content {
+    padding-top: 1.5rem;
+    color: #8f8e8e;
+    font-size: 1rem;
+  }
+  
+  .newsletter input {
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    width: 70%;
+    height: 30px;
+  }
+  
